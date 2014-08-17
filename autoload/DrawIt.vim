@@ -354,10 +354,10 @@ fun! DrawIt#DrawItStart(...)
   call SaveUserMaps("bn","",":\<c-v>","DrawIt")
 
   " DrawItStart: DrawIt maps (Charles Campbell) {{{3
-  nmap <silent> <buffer> <script> <left>		:set lz<CR>:silent! call <SID>DrawLeft()<CR>:set nolz<CR>
-  nmap <silent> <buffer> <script> <right>		:set lz<CR>:silent! call <SID>DrawRight()<CR>:set nolz<CR>
-  nmap <silent> <buffer> <script> <up>			:set lz<CR>:silent! call <SID>DrawUp()<CR>:set nolz<CR>
-  nmap <silent> <buffer> <script> <down>		:set lz<CR>:silent! call <SID>DrawDown()<CR>:set nolz<CR>
+  nmap <silent> <buffer> <script> <s-h>		:set lz<CR>:silent! call <SID>DrawLeft()<CR>:set nolz<CR>
+  nmap <silent> <buffer> <script> <s-l>		:set lz<CR>:silent! call <SID>DrawRight()<CR>:set nolz<CR>
+  nmap <silent> <buffer> <script> <s-k>			:set lz<CR>:silent! call <SID>DrawUp()<CR>:set nolz<CR>
+  nmap <silent> <buffer> <script> <s-j>		:set lz<CR>:silent! call <SID>DrawDown()<CR>:set nolz<CR>
   nmap <silent> <buffer> <script> <s-left>		:set lz<CR>:silent! call <SID>MoveLeft()<CR>:set nolz<CR>
   nmap <silent> <buffer> <script> <s-right>		:set lz<CR>:silent! call <SID>MoveRight()<CR>:set nolz<CR>
   nmap <silent> <buffer> <script> <s-up>		:set lz<CR>:silent! call <SID>MoveUp()<CR>:set nolz<CR>
